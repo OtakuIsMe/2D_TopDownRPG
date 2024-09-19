@@ -9,11 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33563219346829195}
+  - component: {fileID: 5697273490217987738}
   - component: {fileID: 8769783032628926619}
   - component: {fileID: 592910116326622695}
   - component: {fileID: 6823779824446584917}
   - component: {fileID: 8536718138604301759}
   - component: {fileID: 3324589926321494637}
+  - component: {fileID: 1258593644648669525}
   - component: {fileID: 6659033378465166580}
   - component: {fileID: 5182106437543944334}
   m_Layer: 0
@@ -38,6 +40,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5697273490217987738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325252557305105469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f052a454035e2e44981bb7a8b2091662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 2477a062909fc92458056a04a73b1d0a, type: 2}
+  restoreDefaultMatTime: 0.2
 --- !u!212 &8769783032628926619
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -177,6 +193,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.037403826, y: -0.012469238}
   m_Size: {x: 1.0328615, y: 0.8832681}
   m_Direction: 1
+--- !u!114 &1258593644648669525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325252557305105469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb1d73eca114a64da01b8b973906580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
 --- !u!95 &6659033378465166580
 Animator:
   serializedVersion: 5
@@ -210,3 +239,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c77d4271e9623844a4dc2de0d95b14d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 3
