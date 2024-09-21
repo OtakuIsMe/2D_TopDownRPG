@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator myAnimator;
     private SpriteRenderer mySpriteRender;
+    private float startingMoveSpeed;
 
     private bool facingLeft = false;
     private bool isDashing = false;
@@ -33,6 +34,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         playerControls.Combat.Dash.performed += _ => Dash();
+
+        startingMoveSpeed = moveSpeed;
     }
 
     private void OnEnable()
@@ -86,8 +89,19 @@ public class PlayerController : MonoBehaviour
         if (!isDashing)
         {
             isDashing = true;
-            moveSpeed += dashSpeed;
+            moveSpeed *= dashSpeed;
             myTrailRenderer.emitting = true;
+            StartCoroutine(EndDashRoutine());
         }
+    }
+    private IEnumerator EndDashRoutine()
+    {
+        float dashTime = 0.2f;
+        float dashCD = 0.25f;
+        yield return new WaitForSeconds(dashTime);
+        moveSpeed = startingMoveSpeed;
+        myTrailRenderer.emitting = false;
+        yield return new WaitForSeconds(dashCD);
+        isDashing = false;
     }
 }
