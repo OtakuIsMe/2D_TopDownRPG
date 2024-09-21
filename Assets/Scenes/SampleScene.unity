@@ -631,6 +631,7 @@ MonoBehaviour:
   slashAnimPrefab: {fileID: 4973554877527624368, guid: 9e3b43f9462c8cc4c8946ecd31cdf1ae, type: 3}
   slashAnimSpawnPoint: {fileID: 1132620881}
   weaponCollider: {fileID: 1533984510}
+  swordAttackCD: 0.5
 --- !u!1 &1132620880
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +946,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
+  dashSpeed: 4
+  myTrailRenderer: {fileID: 0}
 --- !u!95 &1632310204
 Animator:
   serializedVersion: 5
@@ -1376,7 +1379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6006448801822146592, guid: cacb83a089a9a0347b35fe085fe85b09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.4343586
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 6006448801822146592, guid: cacb83a089a9a0347b35fe085fe85b09, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1413,6 +1416,22 @@ PrefabInstance:
     - target: {fileID: 6006448801822146592, guid: cacb83a089a9a0347b35fe085fe85b09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355987672270069722, guid: cacb83a089a9a0347b35fe085fe85b09, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4809088
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355987672270069722, guid: cacb83a089a9a0347b35fe085fe85b09, type: 3}
+      propertyPath: m_Size.y
+      value: 0.66018224
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355987672270069722, guid: cacb83a089a9a0347b35fe085fe85b09, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.037269764
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355987672270069722, guid: cacb83a089a9a0347b35fe085fe85b09, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.11131282
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
