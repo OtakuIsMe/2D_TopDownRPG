@@ -137,6 +137,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -8, y: 2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 84
+      m_TileSpriteIndex: 13
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741826
   - first: {x: -5, y: 2, z: 0}
     second:
       serializedVersion: 2
@@ -1097,6 +1107,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 04d99cdf8b595dd46b44b3ae42570126, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 9b468a3c66273794fb74c4f7a50d2df4, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 30e4b28de41136d4e921687adaad2424, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 5d242d7816fae7c41b7fa24fb343f845, type: 3}
@@ -1124,7 +1136,7 @@ Tilemap:
     m_Data: {fileID: -1370932738, guid: 82d5a8f682741ed4196ad24364872d82, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -121928134, guid: 82d5a8f682741ed4196ad24364872d82, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: -864349999, guid: 82d5a8f682741ed4196ad24364872d82, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 257189033, guid: 82d5a8f682741ed4196ad24364872d82, type: 3}
@@ -1265,7 +1277,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -580843517, guid: 17dc32165cd25be44ae017381cd23c4c, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 84
+  - m_RefCount: 85
     m_Data:
       e00: 1
       e01: 0
@@ -1284,7 +1296,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 84
+  - m_RefCount: 85
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -1359,7 +1371,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &9165542959565125257
+--- !u!114 &7963999343051484392
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
